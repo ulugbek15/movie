@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="movie">
+       <div class="container">
+        <h1 class="movie__title">Movies</h1>
+        <form class="form" id="form">
+         <label>
+             Qidiruv:
+             <input class="movie__search" placeholder="search ..." id="search_movie" type="text" name="search_movie">
+         </label>
+         <label>
+             Filtrlash:
+             <select class="movie__filter" name="select" id="select">
+                 <option value="a_z">A_Z</option>
+                 <option value="z_a">Z_A</option>
+                 <option value="old_new">OLD_NEW</option>
+                 <option value="new_old">NEW_OLD</option>
+             </select>
+         </label>
+         <label>
+             Janr:
+             <select class="movie__genre" name="select" id="select">
+                 <option value="All">All</option>
+             </select>
+         </label>
+         <button class="movie__btn" type="submit">Search</button>
+        </form>
+ 
+        <ul class="movie__list"></ul>
+       </div>
+    </section>
+
+    <div class="modal">
+        <div class="content">
+            <p class="modal__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit porro non tenetur voluptas, culpa suscipit!</p>
+            <button class="btn">&times</button>
+        </div>
+    </div>
+
+
+    <script src="./js/films.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
